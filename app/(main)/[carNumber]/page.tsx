@@ -78,16 +78,14 @@ export default async function MainPage({
         </TableRow>
         <TableRow>
           <TableCell className="px-3 py-2 font-medium">
-            תאריך טסט אחרון
+            מבחן שנתי אחרון{" "}
           </TableCell>
           <TableCell className="px-3 py-2 font-bold">
             {car.mivchan_acharon_dt}
           </TableCell>
         </TableRow>
         <TableRow>
-          <TableCell className="px-3 py-2 font-medium">
-            Insurance Valid Until
-          </TableCell>
+          <TableCell className="px-3 py-2 font-medium">תוקף רישוי </TableCell>
           <TableCell className="px-3 py-2 font-bold">{car.tokef_dt}</TableCell>
         </TableRow>
         <TableRow>
