@@ -21,6 +21,10 @@ export interface Car {
   ramat_gimur: string;
   degem_cd: number;
   baalut: string;
+  kinuy_mishari: string;
+  moed_aliya_lakvish: string;
+  zmig_ahori: string;
+  zmig_kidmi: string;
   [key: string]: any;
   tag_neche: TagNeche[];
 }

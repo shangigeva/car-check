@@ -49,20 +49,35 @@ export default async function MainPage({
           </TableCell>
         </TableRow>
         <TableRow>
-          <TableCell className="px-3 py-2 font-medium">יצרן</TableCell>
+          <TableCell className="px-3 py-2 font-medium">שם יצרן מלא</TableCell>
           <TableCell className="px-3 py-2 font-bold">
             {car.tozeret_nm}
           </TableCell>
         </TableRow>
         <TableRow>
-          <TableCell className="px-3 py-2 font-medium">Manufacturer</TableCell>
+          <TableCell className="px-3 py-2 font-medium">יצרן</TableCell>
           <TableCell className="px-3 py-2 font-bold">
             {car.tozeret_nm.split("-")[0]}
           </TableCell>
         </TableRow>
         <TableRow>
-          <TableCell className="px-3 py-2 font-medium ">דגם</TableCell>
+          <TableCell className="px-3 py-2 font-medium ">מספר דגם</TableCell>
           <TableCell className="px-3 py-2 font-bold">{car.degem_nm}</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell className="px-3 py-2 font-medium "> דגם</TableCell>
+          <TableCell className="px-3 py-2 font-bold">
+            {car.kinuy_mishari}
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell className="px-3 py-2 font-medium ">
+            {" "}
+            מועד עליה לכביש
+          </TableCell>
+          <TableCell className="px-3 py-2 font-bold">
+            {car.moed_aliya_lakvish}
+          </TableCell>
         </TableRow>
         <TableRow>
           <TableCell className="px-3 py-2 font-medium">שנת ייצור</TableCell>
@@ -74,6 +89,24 @@ export default async function MainPage({
           <TableCell className="px-3 py-2 font-medium">סוג דלק</TableCell>
           <TableCell className="px-3 py-2 font-bold">
             {car.sug_delek_nm}
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell className="px-3 py-2 font-medium">רמת גימור</TableCell>
+          <TableCell className="px-3 py-2 font-bold">
+            {car.ramat_gimur}
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell className="px-3 py-2 font-medium">צמיג קדמי</TableCell>
+          <TableCell className="px-3 py-2 font-bold">
+            {car.zmig_kidmi}
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell className="px-3 py-2 font-medium">צמיג אחורי</TableCell>
+          <TableCell className="px-3 py-2 font-bold">
+            {car.zmig_ahori}
           </TableCell>
         </TableRow>
         <TableRow>
