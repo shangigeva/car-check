@@ -21,9 +21,13 @@ import { toast } from "@/components/ui/use-toast";
 import { useRouter } from "next/navigation";
 
 const FormSchema = z.object({
-  carNumber: z.string().max(8).min(5, {
-    message: "מספר הרכב חייב להכיל לפחות 5 ספרות",
-  }),
+  carNumber: z
+    .string()
+    .regex(/^[0-9]*$/, "המספר חייב להיות מורכב מספרות בלבד")
+    .max(8)
+    .min(5, {
+      message: "מספר הרכב חייב להכיל לפחות 5 ספרות",
+    }),
 });
 export default function SearchPage() {
   const router = useRouter();
