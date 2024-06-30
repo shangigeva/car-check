@@ -12,7 +12,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import NotFound from "../[id]/not-found";
+import NotFound from "../not-found";
 
 export default async function MainPage({
   params,
