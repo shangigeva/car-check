@@ -12,6 +12,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import NotFound from "../[id]/not-found";
 
 export default async function MainPage({
   params,
@@ -20,7 +21,9 @@ export default async function MainPage({
 }) {
   const car = await fetchCar(params.carNumber);
   console.log(car);
-
+  if (!car || !car.mispar_rechev) {
+    return <NotFound />;
+  }
   let tag = false;
   if (car.tag_neche.length > 0) {
     const first = car.tag_neche[0];
