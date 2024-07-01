@@ -6,7 +6,7 @@ import { CardEmployer } from "./employer";
 
 const page = () => {
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 px-9">
       <CardDetails />
       <CardContact />
       <CardStatus />
