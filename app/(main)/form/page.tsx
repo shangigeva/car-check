@@ -2,6 +2,7 @@ import React from "react";
 import { CardDetails } from "./details";
 import { CardContact } from "./contact";
 import { CardStatus } from "./status";
+import { CardEmployer } from "./employer";
 
 const page = () => {
   return (
@@ -9,6 +10,7 @@ const page = () => {
       <CardDetails />
       <CardContact />
       <CardStatus />
+      <CardEmployer />
     </div>
   );
 };
